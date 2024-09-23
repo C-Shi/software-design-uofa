@@ -614,3 +614,46 @@
 
         weather_sbj.notify("28 C") # print out 28C
     ```
+
+### Model-View-Controller Pattern
+- Model: Self contains object with underlaying data, state and logic. Usually entity object
+- View: presentation layer that interact with user. something via observer pattern. Usually boundary object
+- Controller: interprets user's interaction and talk to model. Control object. Controller allows views and model to be loosely coupled
+
+## Design Principles
+### Open/Closed principle
+- A class should be open to **extension** but closed to **change**
+- When a class is completed and stable in production, it can be considered closed.
+- A closed class is not subjected to adding new features, changing behavior etc. Only modify if there is a bug
+- Instead, adding features should be done via extension through **inheritance** or interface **polymophism**
+- this principle keep stable parts of systems separate from varing parts
+
+### Dependency Inversion pricinple
+- high level modules should depend on high level generalizations and not low level details
+- generalize the beheaviors into abstract and interface
+- Eg: client class should depends on interface or abstract, rather than any specific concrete class
+
+### Composing Objects principle
+- class should achieve code reuse through **aggregation** rather than inheritance
+- Composite and decorator design pattern use this principle
+- Objects can aggregate other objects in the **run time** to build more complex system
+- Concrete object and delegate behaviors to other objects therefore loosely coupling
+- **Disadvantage**:
+  - Must provide implementation for all behaviors without the benefit of inheritance
+  - have very simiplar implementation across class
+
+### Implementation Segregation principle
+- class should not be forced to depend on methods it does not use
+- Eg: Casher and self-checkout should not directly implemented from same interface, because they have different behavior
+  - self-checkout should not implement `takeBreak()` for example
+- split large interfaces into smaller generalization
+
+### Least Knowledge principle
+-  A class should have minimum knowledge about other class
+-  A method can called any other method within the same class
+-  A method can called the (public) method of any parameters (If a object is passed in as parameter)
+-  A method can called the (public) method of all object it instantiated
+-  A methoc can called the (public) method of all object-level variables'method
+-  
+
+## Anti-Pattern code smells

@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.12">
+  <diagram name="Page-1" id="d9SlG4wk9ZQYXn5UVnFE">
+    <mxGraphModel dx="1260" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zoI2Io-6oYOiqsWRahLE-1" value="Employee" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="230" width="160" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="zoI2Io-6oYOiqsWRahLE-2" value="- name: String&lt;div&gt;- id: number&lt;/div&gt;&lt;div&gt;- title: string&lt;/div&gt;&lt;div&gt;- salary: Number&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="zoI2Io-6oYOiqsWRahLE-1">
+          <mxGeometry y="26" width="160" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="zoI2Io-6oYOiqsWRahLE-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="zoI2Io-6oYOiqsWRahLE-1">
+          <mxGeometry y="100" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="zoI2Io-6oYOiqsWRahLE-4" value="+ getName(): String&lt;div&gt;+ setName(String) : void&lt;/div&gt;&lt;div&gt;+ getId() : Number&lt;/div&gt;&lt;div&gt;+ setId(Number) : void&lt;/div&gt;&lt;div&gt;+ getTtitle(): String&lt;/div&gt;&lt;div&gt;+ setTitle(String) : void&lt;/div&gt;&lt;div&gt;+ getSalary() : Number&lt;/div&gt;&lt;div&gt;+ setSalary(Number) : void&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="zoI2Io-6oYOiqsWRahLE-1">
+          <mxGeometry y="108" width="160" height="132" as="geometry" />
+        </mxCell>
+        <mxCell id="zoI2Io-6oYOiqsWRahLE-5" value="Controller" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="70" width="330" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="zoI2Io-6oYOiqsWRahLE-6" value="- employees: Employee[]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="zoI2Io-6oYOiqsWRahLE-5">
+          <mxGeometry y="26" width="330" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zoI2Io-6oYOiqsWRahLE-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="zoI2Io-6oYOiqsWRahLE-5">
+          <mxGeometry y="52" width="330" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="zoI2Io-6oYOiqsWRahLE-8" value="+ getEmployeeName(Number: Id): String&lt;div&gt;- setEmployeeName(Number: id, String: name) : void&lt;/div&gt;&lt;div&gt;+ getEmployeeId(String: name): String&lt;/div&gt;&lt;div&gt;+ getEmployeeTitle(Number: id): String&lt;/div&gt;&lt;div&gt;+ setEmployeeTitle(Number: id, String: title): void&lt;/div&gt;&lt;div&gt;+ getEmployeeSalary(Number: id): Number&lt;/div&gt;&lt;div&gt;+ setEmployeeSalary(Number: id, Number: salary) : void&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="zoI2Io-6oYOiqsWRahLE-5">
+          <mxGeometry y="60" width="330" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zoI2Io-6oYOiqsWRahLE-9" value="View" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="290" width="220" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="zoI2Io-6oYOiqsWRahLE-10" value="- employees: Employee[]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="zoI2Io-6oYOiqsWRahLE-9">
+          <mxGeometry y="26" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zoI2Io-6oYOiqsWRahLE-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="zoI2Io-6oYOiqsWRahLE-9">
+          <mxGeometry y="52" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="zoI2Io-6oYOiqsWRahLE-12" value="+ show (Employee: employee): Context" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="zoI2Io-6oYOiqsWRahLE-9">
+          <mxGeometry y="60" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zoI2Io-6oYOiqsWRahLE-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.005;entryY=0.041;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=diamond;endFill=0;" edge="1" parent="1" source="zoI2Io-6oYOiqsWRahLE-1" target="zoI2Io-6oYOiqsWRahLE-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zoI2Io-6oYOiqsWRahLE-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.977;entryY=0.139;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=diamond;endFill=0;exitX=0.545;exitY=-0.049;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="zoI2Io-6oYOiqsWRahLE-9" target="zoI2Io-6oYOiqsWRahLE-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="914.62" y="289.5" as="sourcePoint" />
+            <mxPoint x="770.0000000000001" y="119.86800000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoI2Io-6oYOiqsWRahLE-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.003;entryY=0.832;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=diamond;endFill=0;" edge="1" parent="1" source="zoI2Io-6oYOiqsWRahLE-4" target="zoI2Io-6oYOiqsWRahLE-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
