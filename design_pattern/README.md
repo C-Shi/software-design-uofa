@@ -657,3 +657,23 @@
 -  
 
 ## Anti-Pattern code smells
+1. **Long Method**:  
+   Methods that are too long can be hard to understand and maintain. Break them into smaller, more focused methods.
+
+2. **Large Class**:  
+   Classes that do too much or have too many responsibilities violate the Single Responsibility Principle. Consider breaking them into smaller classes.
+
+3. **Duplicate Code**:  
+   Code that is repeated in multiple places can lead to maintenance challenges. Aim to refactor and create reusable methods or classes.
+
+4. **Excessive Parameters**:  
+   Methods with too many parameters can be confusing. Consider using an object to encapsulate the parameters or reducing the number of arguments.
+
+5. **Feature Envy**:  
+   When a class frequently accesses the methods or data of another class, it might indicate that the functionality should be moved closer to the data it operates on.
+
+6. **God Object**:  
+   A class that knows too much or does too much can create tight coupling. Distribute responsibilities to promote a more modular design.
+
+7. **Data Class**:  
+   A class exists primarily to hold data with little to no behavior or functionality
